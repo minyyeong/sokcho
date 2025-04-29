@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/**************************************************************
+	텍스트 폰트 및 전체 body 스타일
+	작성일 : 2024.01 / 작성자 : ㈜넥스미디어
+**************************************************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color:#5f5f5f;
+    font-weight: 300;
+    font-style: normal;
+    background: transparent;
+    -webkit-text-size-adjust:none;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+}
+body, button, h1, h2, h3, h4, h5, input, select, table, textarea {
+    font-family: 'pretendard', 'Noto Sans KR', sans-serif, HelveticaNeue-Light,AppleSDGothicNeo-Light;
+}
+img {vertical-align:top;border:0;margin:0;padding:0;}
+* {box-sizing: border-box; font-family: 'pretendard', 'Noto Sans KR', sans-serif;}
+a:link {color:#222;}
+a:hover{color:#222;}
+a:visited {color:#222;}
+a:active {color:#222;}
+
+.txt-center {text-align: center;}
+.txt-right {text-align: right;}
+
+/* 스크롤바 설정*/
+body::-webkit-scrollbar {
+    width: 7px;  /* 스크롤바의 너비 */
+    height: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: rgba(0,0,0,.5); /* 스크롤바의 색상 */
+}
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;  /*스크롤바 뒷 배경 색상*/
+}
+body {
+    overflow-x: hidden;
+}
+
+[v-cloak] {display: none;}
+
