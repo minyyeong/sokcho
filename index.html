@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>케이스스터디 A안 서브</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+
+  <script src="./js/lenis.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- <script type="text/javascript" src="./js/common.js"></script> -->
+  <script type="text/javascript" src="./js/sub.js"></script>
+  <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+
+  <!-- style sheets -->
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+
+<body>
+  <div class="main_container" id="scrWrap">
+    <div data-include1="header" id="header">
+      <header>
+        <div class="inner">
+          <div class="logo">
+            <a href="../main.php"><img src="./images/common/header_logo.png" alt=""></a>
+          </div>
+          <div class="menu_sub">
+            <ul class="dep01">
+              <li>
+                <a href="javascript:;"><span>사업안내</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">사업개요</a></li>
+                  <li><a href="javascript:;">네이밍</a></li>
+                  <li><a href="javascript:;">입지특장점</a></li>
+                  <li><a href="javascript:;">360도 VR</a></li>
+                  <li><a href="javascript:;">브랜드 소개</a></li>
+                  <li><a href="javascript:;">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;"><span>단지안내</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">투시도 / 조감도</a></li>
+                  <li><a href="javascript:;">단지 / 동호수 배치도</a></li>
+                  <li><a href="javascript:;">조경안내</a></li>
+                  <li><a href="javascript:;">커뮤니티</a></li>
+                  <li><a href="javascript:;">AIQ TECH</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;"><span>세대안내</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">84(A,B,C)</a></li>
+                  <li><a href="javascript:;">100A</a></li>
+                  <li><a href="javascript:;">복층(136, 180)</a></li>
+                  <li><a href="javascript:;">펜트(142~147)</a></li>
+                  <li><a href="javascript:;">추가선택 품목</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;"><span>분양안내</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">입주자모집공고</a></li>
+                  <li><a href="javascript:;">중도금 대출 안내</a></li>
+                  <li><a href="javascript:;">명의변경 안내</a></li>
+                  <li><a href="javascript:;">옵션계약안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;"><span>홍보센터</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">언론보도</a></li>
+                  <li><a href="javascript:;">홍보영상</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;"><span>관심고객등록</span></a>
+                <ul class="dep02">
+                  <li><a href="javascript:;">관심고객등록</a></li>
+                  <li><a href="javascript:;">당첨자 발표</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header_util">
+            <span class="open">GRAND OPEN</span>
+            <a href="tel:16685777"><span>1668.5777</span><img src="./images/common/header_call.svg" alt=""></a>
+            <div class="open_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu_wrap">
+        <div class="inner">
+          <div class="img_box">
+            <img src="./images/common/header_menuimg.jpg" alt="">
+          </div>
+          <div class="menu_box">
+            <div class="logo"><img src="./images/common/header_menuLogo.png" alt=""></div>
+            <div class="menu">
+              <ul class="dep01">
+                <li>
+                  <a href="javascript:;"><span>사업안내</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">사업개요</a></li>
+                    <li><a href="javascript:;">네이밍</a></li>
+                    <li><a href="javascript:;">입지특장점</a></li>
+                    <li><a href="javascript:;">360도 VR</a></li>
+                    <li><a href="javascript:;">브랜드 소개</a></li>
+                    <li><a href="javascript:;">오시는길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"><span>단지안내</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">투시도 / 조감도</a></li>
+                    <li><a href="javascript:;">단지 / 동호수 배치도</a></li>
+                    <li><a href="javascript:;">조경안내</a></li>
+                    <li><a href="javascript:;">커뮤니티</a></li>
+                    <li><a href="javascript:;">AIQ TECH</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"><span>세대안내</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">84(A,B,C)</a></li>
+                    <li><a href="javascript:;">100A</a></li>
+                    <li><a href="javascript:;">복층(136, 180)</a></li>
+                    <li><a href="javascript:;">펜트(142~147)</a></li>
+                    <li><a href="javascript:;">추가선택 품목</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"><span>분양안내</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">입주자모집공고</a></li>
+                    <li><a href="javascript:;">중도금 대출 안내</a></li>
+                    <li><a href="javascript:;">명의변경 안내</a></li>
+                    <li><a href="javascript:;">옵션계약안내</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"><span>홍보센터</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">언론보도</a></li>
+                    <li><a href="javascript:;">홍보영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"><span>관심고객등록</span></a>
+                  <ul class="dep02">
+                    <li><a href="javascript:;">관심고객등록</a></li>
+                    <li><a href="javascript:;">당첨자 발표</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="tel:16685777"><img src="./images/common/header_menucall.svg" alt=""> 1668.5777</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $('.menu_sub .dep01 li').hover(
+          function () {
+            $(this).find('.dep02').addClass('active');
+          },
+          function () {
+            $(this).find('.dep02').removeClass('active');
+          }
+        );
+
+        $(function () {
+          $('header .header_util .open_btn').click(function () {
+            $('header').toggleClass('on');
+            $('header').removeClass('whiteEnd');
+            $('header .inner .menu_sub').toggleClass('off');
+          })
+
+          $('header + .menu_wrap .inner .menu_box .menu .dep01 > li > a').click(function () {
+            $('header + .menu_wrap .inner .menu_box .menu .dep01 > li').removeClass('on')
+            $(this).parent().addClass('on')
+          })
+
+          //위로 올리면 보이는 GNB
+          var prevScrollTop = 0;
+
+          document.addEventListener("scroll", function () {
+            // 헤더에 'on' 클래스가 있으면 아무 동작도 하지 않음
+            if ($("header").hasClass("on")) return;
+            var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치
+            if (nowScrollTop > prevScrollTop) { // 스크롤 방향: 아래
+              if (nowScrollTop > 150) {
+                $("header").addClass("scrollDown").removeClass("scrollTop scrollUp")
+              }
+            } else { // 스크롤 방향: 위
+              if (nowScrollTop === 0) {
+                $("header").removeClass("scrollUp").addClass("scrollTop");
+              } else {
+                $("header").removeClass("scrollDown").addClass("scrollUp");
+              }
+            }
+            prevScrollTop = nowScrollTop; // 현재 스크롤 값을 저장
+          });
+
+
+        })
+      </script>
+      <script>
+        $(function () {
+          gsap.registerPlugin(ScrollTrigger);
+
+          ScrollTrigger.create({
+            trigger: ".last_section",
+            start: "top center",
+            end: "bottom center",
+            toggleClass: {
+              targets: "header",
+              className: "white"
+            }
+          });
+        });
+      </script>
+
+    </div>
+    <main id="WWA" class="whoweare-intro whoweare">
+      <div class="main-inner" data-path="introduction">
+        <section class="section_motion"></section>
+        <div class="sub_top top_img">
+          <div class="top_tit_area sticky">
+            <div class="top_tit-inner static">
+              <h2 class="sub_top_desc m_h8">
+                <p><span>사업개요</span></p>
+              </h2>
+              <h3 class="sub_top_tit m_h2">
+                <p><span>영랑공원, 영랑호, 오션뷰</span></p>
+                <p><span>더샵, 속초의 모든 전망을 품다</span></p>
+              </h3>
+            </div>
+            <div class="top_tit-inner absol">
+              <h2 class="sub_top_desc m_h8">사업개요</h2>
+              <h3 class="sub_top_tit m_h2"> 영랑공원, 영랑호, 오션뷰<br class="pc"><br class="mobile">더샵, 속초의 모든 전망을
+                품다</h3>
+            </div>
+          </div>
+          <div class="overflow-ct">
+            <div class="top_kv_area">
+              <div class="core-wrap">
+                <div class="core-wrap-inner dim">
+                  <img src="./images/sub/sub_section_1.jpg" alt="" class="pc_only">
+                  <img src="./images/sub/m_sub_section_1.jpg" alt="" class="mo_only">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="sub_container">
+          <div class="sec_inner">
+            <div class="column-contents firstpage">
+              <div class="left cont"></div>
+              <div class="right cont">
+                <div class="text-wrap h4 ">
+                  <p class="sub in_sec_copy m_h6">집이란, 당신과 가족의 <br class="mo_only">삶을 담는 그릇.</p>
+
+                  <p class="desc in_sec_copy"> 당신의 평생을 담을 집은, 시간의 흐름에도 변함없이 견고하게 빛나야 하기 때문입니다.<br>
+                    집이 가져야 할 본질적 가치와 그 안에 담길 라이프스타일을 더 깊이 고민하는 더샵.<br>
+                    살수록 커지는 만족, 살수록 느끼는 가치. 더샵다움이란, 이런것입니다.<br><br>
+
+                    보이는 것을 잘 하는 브랜드는 많습니다. 보이지 않는 것에 최선을 다하는 브랜드는 많지 않습니다.<br>
+                    독특한 것을 자랑하는 집은 많습니다. 본질적인 것을 자랑하는 집은 찾기 어렵습니다.<br>
+                    더샵은 보이지 않는 것에서부터 앞서가는 것을 선택했습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- rowan 0627 banner-wrap 추가 -->
+          <div class="banner-wrap">
+            <!-- <div class="banner"></div> -->
+            <div class="banner">
+              <video autoplay muted loop playsinline class="bg-video">
+                <!-- <source src="./images/sub/banner_bg_2k.mp4" type="video/mp4" /> -->
+                <source src="https://bucket-apt.s3.ap-northeast-2.amazonaws.com/pub/2025_case_study/a/video/banner_bg_2k.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="sec_inner" style="padding-bottom:100px;">
+            <div class="column-contents sticky ">
+              <div class="left left_1 cont in_sec_copy">
+                <h3 class="m_h3"><span style="font-weight: 700; color: #003057;">더샵
+                    속초프라임뷰<br>사업개요</span></h3>
+              </div>
+              <div class="right right_1 cont in_sec_box_area">
+                <table class="in_sec_box">
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th>사업명</th>
+                    <td>속초 영랑근린공원 민간특례 조성사업 공동주택 건설공사</td>
+                  </tr>
+                  <tr>
+                    <th>대지위치</th>
+                    <td>속초시 금호동 617-21외 32필지</td>
+                  </tr>
+                  <tr>
+                    <th>건축면적</th>
+                    <td>6,802.74㎡</td>
+                  </tr>
+                  <tr>
+                    <th>건폐율</th>
+                    <td>17.02%</td>
+                  </tr>
+                  <tr>
+                    <th>건축규모</th>
+                    <td>지하4층, 지상25~33층</td>
+                  </tr>
+                  <tr>
+                    <th>대지면적</th>
+                    <td>39,970.00㎡</td>
+                  </tr>
+                  <tr>
+                    <th>용적률</th>
+                    <td>299.91%</td>
+                  </tr>
+                  <tr>
+                    <th>세대수</th>
+                    <td>1,024세대</td>
+                  </tr>
+                  <tr>
+                    <th>주차대수</th>
+                    <td>총 1,474대 [아파트 1,462대, 근린생활시설 12대]</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section03">
+          <div class="scroll_inner">
+            <div class="scroll_pin">
+              <div class="txt_wrap">
+                <div class="txt_box">
+                  <div class="txt txt01">
+                    <p>THE SHARP<br>
+                      SOKCHO PRIMEVIEW</p>
+                  </div>
+                  <div class="txt txt02">
+                    <p>PREMIUM</p>
+                  </div>
+                  <div class="img_box">
+                    <ul>
+                      <li class="img01">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect01.jpg" alt="">
+                      </li>
+                      <li class="img02">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect02.jpg" alt="">
+                      </li>
+                      <li class="img03">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect03.jpg" alt="">
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="img04">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect04.jpg" alt="">
+                      </li>
+                      <li class="img05">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect05.jpg" alt="">
+                      </li>
+                      <li class="img06">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect06.jpg" alt="">
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="img07">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect07.jpg" alt="">
+                      </li>
+                      <li class="img08">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect08.jpg" alt="">
+                      </li>
+                      <li class="img09">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect09.jpg" alt="">
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="img10">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect10.jpg" alt="">
+                      </li>
+                      <li class="img11">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect11.jpg" alt="">
+                      </li>
+                      <li class="img12">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect12.jpg" alt="">
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="img13">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect13.jpg" alt="">
+                      </li>
+                      <li class="img14">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect14.jpg" alt="">
+                      </li>
+                      <li class="img15">            
+                        <div class="cursor">
+                          <div class="cursor_trace">
+                            <span>MORE +</span>
+                          </div>
+                        </div>
+                        <img src="./images/sub/card_effect15.jpg" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>    
+            const links_section03 = document.querySelectorAll('.txt_wrap .txt_box .img_box ul li');
+
+            links_section03.forEach(link => {
+              const cursor = link.querySelector('.cursor');
+
+              // 각 li 요소에 상대 위치 기준 설정
+              link.style.position = 'relative';
+
+              // 마우스를 해당 요소 위로 올렸을 때 커서 보이기 (dark 클래스 있을 때만)
+              link.addEventListener('mouseenter', () => {
+                if (link.classList.contains('dark')) {
+                  cursor.style.display = 'block';
+                }
+              });
+
+              // 마우스를 해당 요소에서 벗어났을 때 커서 숨기기
+              link.addEventListener('mouseleave', () => {
+                cursor.style.display = 'none';
+              });
+
+              // 마우스가 요소 내부에서 움직일 때 커서 위치 이동 (dark 클래스 있을 때만)
+              link.addEventListener('mousemove', e => {
+                if (link.classList.contains('dark')) {
+                  const rect = link.getBoundingClientRect();
+                  const x = e.clientX - rect.left;
+                  const y = e.clientY - rect.top;
+
+                  cursor.style.left = `${x}px`;
+                  cursor.style.top = `${y}px`;
+                  cursor.style.position = 'absolute';
+                }
+              });
+            });
+
+          </script>
+        </section>
+
+        <section class="infinite_rolling">
+          <div class="infi_box">
+            <div class="infiroll_wrap">
+              <div class="infi_txt">&nbsp;&nbsp;THE SHARP SOKCHO PRIMEVIEW </div>
+              <div class="infi_txt">&nbsp;&nbsp;THE SHARP SOKCHO PRIMEVIEW </div>
+              <div class="infi_txt">&nbsp;&nbsp;THE SHARP SOKCHO PRIMEVIEW </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="last_section">
+          <div class="last_wrap">
+            <div class="last_txt_wrap">
+              <div class="last_sec_img"><img src="./images/sub/last_section.jpg" alt=""></div>
+              <div class="last_txt_1">
+                <p>더샵,</p>
+              </div>
+              <div class="last_txt_2">
+                <p>속초가 선망하는</p>
+              </div>
+              <div class="last_txt_3">
+                <p>정상의 가치로 빛나다</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <div data-include2="footer" id="footer">
+      <footer>
+        <div class="top_link_box">
+          <a href="javascript:;">
+            <div class="cursor">
+              <div class="cursor_trace">
+                <span>MORE +</span>
+              </div>
+            </div>
+            <div class="bg">
+              <div class="bg_img"></div>
+            </div>
+            <p>프리미엄6</p>
+            <span></span>
+            <p>더샵 속초 프라임뷰의 차별화를 경험하세요</p>
+          </a>
+          <a href="javascript:;">
+            <div class="cursor">
+              <div class="cursor_trace">
+                <span>MORE +</span>
+              </div>
+            </div>
+            <div class="bg">
+              <div class="bg_img"></div>
+            </div>
+            <p>관심고객등록</p>
+            <span></span>
+            <p>다양한 소식과 특별한 혜택을 제공합니다</p>
+          </a>
+        </div>
+        <div class="logo">
+          <img src="./images/common/footer_logo.png" alt="">
+        </div>
+        <div class="info_wrap">
+          <div class="left_info">
+            <div class="txt_box">
+              <p>시행수탁 : 우리자산신탁(주)<span></span>시행위탁 : 영랑공원개발(주)<span></span>시공 : 포스코이앤씨 / 태원건설산업(주) ㈜포스코이앤씨</p>
+              <p>대표자 : 전중선<span></span>주소 : 경상북도 포항시 북구 중흥로 307(죽도동)<span></span>사업자등록번호 : 506-81-02280</p>
+              <p>온라인 마케팅 대행 : ㈜넥스미디어<span></span>주소 : 경기도 성남시 분당구 미금일로90번길 32, 웰파크 3층</p>
+              <p>사업자등록번호 : 462-81-00186</p>
+            </div>
+            <div class="flippers">
+              <p>본 홍보물에 사용된 CG, 일러스트, 이미지 등은 소비자의 이해를 돕기 위해 제작된 것으로 실제와 다소 차이가 있을 수 있으며, 사업과정 및 실제 시공에 따라 변경될 수 있습니다.
+              </p>
+              <p>본 홍보물에 표기된 모든 개발계획 및 예정사항 등은 추후 관계기관 혹은 지자체의 사정에 따라 변경 또는 취소될 수 있으며, 이는 당사와 무관합니다.</p>
+              <p>본 홍보물에 표기된 중요사항 및 세부사항은 입주자 모집공고를 참조하시고, 입주자모집공고에 명시되지 않은 사항에 대해서는 견본주택 관계자에게 문의하시기 바랍니다.</p>
+            </div>
+          </div>
+          <div class="right_info">
+            <ul class="dep01">
+              <li>
+                <p>사업안내</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">사업개요</a></li>
+                  <li><a href="javascript:;">네이밍</a></li>
+                  <li><a href="javascript:;">입지특장점</a></li>
+                  <li><a href="javascript:;">360도 VR</a></li>
+                  <li><a href="javascript:;">브랜드 소개</a></li>
+                  <li><a href="javascript:;">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>단지안내</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">투시도 / 조감도</a></li>
+                  <li><a href="javascript:;">단지 / 동호수 배치도</a></li>
+                  <li><a href="javascript:;">조경안내</a></li>
+                  <li><a href="javascript:;">커뮤니티</a></li>
+                  <li><a href="javascript:;">AIQ TECH</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>세대안내</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">84(A,B,C)</a></li>
+                  <li><a href="javascript:;">100A</a></li>
+                  <li><a href="javascript:;">복층(136, 180)</a></li>
+                  <li><a href="javascript:;">펜트(142~147)</a></li>
+                  <li><a href="javascript:;">추가선택 품목</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>분양안내</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">입주자모집공고</a></li>
+                  <li><a href="javascript:;">중도금 대출 안내</a></li>
+                  <li><a href="javascript:;">명의변경 안내</a></li>
+                  <li><a href="javascript:;">옵션계약안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>홍보센터</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">언론보도</a></li>
+                  <li><a href="javascript:;">홍보영상</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>관심고객등록</p>
+                <ul class="dep02">
+                  <li><a href="javascript:;">관심고객등록</a></li>
+                  <li><a href="javascript:;">당첨자 발표</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy_box">
+          <p>© 2024 POSCO ECO&CHALLENGE CO., LTD.ALL RIGHTS RESERVED</p>
+        </div>
+        <a href="javascript:;" class="top_btn">
+          <img src="./images/common/footer_top_arrow.svg" alt="">
+          TOP
+        </a>
+      </footer>
+      <script>
+        $('.top_btn').on('click', function () {
+          $('html, body').animate({ scrollTop: 0 }, 1000);
+        });
+
+        const links_footer = document.querySelectorAll('footer .top_link_box a');
+
+        links_footer.forEach(link => {
+          const cursor = link.querySelector('footer .top_link_box a .cursor');
+
+          // 각 a 요소에 상대 위치 기준 설정
+          link.style.position = 'relative';
+
+          // 마우스를 해당 요소 위로 올렸을 때 커서 보이기
+          link.addEventListener('mouseenter', () => {
+            cursor.style.display = 'block';
+          });
+
+          // 마우스를 해당 요소에서 벗어났을 때 커서 숨기기
+          link.addEventListener('mouseleave', () => {
+            cursor.style.display = 'none';
+          });
+
+          // 마우스가 a 내부에서 움직일 때, 해당 요소 기준으로 커서 이동
+          link.addEventListener('mousemove', e => {
+            const rect = link.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+            cursor.style.position = 'absolute';
+          });
+        });
+      </script>
+    </div>
+  </div>
+</body>
